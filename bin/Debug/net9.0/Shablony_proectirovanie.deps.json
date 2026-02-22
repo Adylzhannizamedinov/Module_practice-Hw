@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Shablony_proectirovanie/1.0.0": {
+        "runtime": {
+          "Shablony_proectirovanie.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Shablony_proectirovanie/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

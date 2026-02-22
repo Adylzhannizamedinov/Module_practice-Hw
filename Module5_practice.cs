@@ -1,18 +1,8 @@
-// Я недобавил использован е в Director и Weapon
-
 using System;
-using System.IO;
 using System.Collections.Generic;
-class Program
-{
-   static void Main(string[] args)
-    {
-        Console.WriteLine("Программа запущена!");
+using System.IO;
 
-        Logger logger = Logger.GetInstance();
-        logger.Log("Тест логирования", LogLevel.INFO);
-    }
-}
+// 1️. SINGLETON – Logger
 public enum LogLevel
 {
     INFO,
@@ -56,32 +46,24 @@ public sealed class Logger
     }
 }
 
-// class Report
-
-
-
+// 2️. BUILDER – Reports
 public class Report
 {
     public string Header { get; set; }
     public string Content { get; set; }
     public string Footer { get; set; }
-
     public List<string> Sections { get; set; } = new List<string>();
 
     public void Export()
     {
         Console.WriteLine(Header);
         Console.WriteLine(Content);
-
-        foreach (string section in Sections)
-        {
-            Console.WriteLine(section);
-        }
-
+        foreach (string s in Sections)
+            Console.WriteLine(s);
         Console.WriteLine(Footer);
     }
 }
-// Интерфейс Builder
+
 public interface IReportBuilder
 {
     void SetHeader(string header);
@@ -90,39 +72,17 @@ public interface IReportBuilder
     void AddSection(string section);
     Report GetReport();
 }
-// Конкретный строитель
 
 public class SimpleReportBuilder : IReportBuilder
 {
     private Report _report = new Report();
 
-    public void SetHeader(string header)
-    {
-        _report.Header = header;
-    }
-
-    public void SetContent(string content)
-    {
-        _report.Content = content;
-    }
-
-    public void SetFooter(string footer)
-    {
-        _report.Footer = footer;
-    }
-
-    public void AddSection(string section)
-    {
-        _report.Sections.Add(section);
-    }
-
-    public Report GetReport()
-    {
-        return _report;
-    }
+    public void SetHeader(string header) => _report.Header = header;
+    public void SetContent(string content) => _report.Content = content;
+    public void SetFooter(string footer) => _report.Footer = footer;
+    public void AddSection(string section) => _report.Sections.Add(section);
+    public Report GetReport() => _report;
 }
-
-// Director
 
 public class ReportDirector
 {
@@ -135,7 +95,8 @@ public class ReportDirector
         builder.SetFooter("=== Report Footer ===");
     }
 }
-// 3.Prototype
+
+// 3️. PROTOTYPE – Character & Weapon
 public class Weapon : ICloneable
 {
     public string Name { get; set; }
@@ -143,14 +104,10 @@ public class Weapon : ICloneable
 
     public object Clone()
     {
-        return new Weapon
-        {
-            Name = this.Name,
-            Damage = this.Damage
-        };
+        return new Weapon { Name = this.Name, Damage = this.Damage };
     }
 }
-// Character
+
 public class Character : ICloneable
 {
     public int Health { get; set; }
@@ -160,10 +117,48 @@ public class Character : ICloneable
     public object Clone()
     {
         Character clone = (Character)this.MemberwiseClone();
-
         clone.Weapon = (Weapon)this.Weapon.Clone();
         clone.Skills = new List<string>(this.Skills);
-
         return clone;
+    }
+}
+
+// MAIN
+class Program
+{
+    static void Main()
+    {
+        // -------- Logger Singleton --------
+        Console.WriteLine("=== Logger Singleton ===");
+        var logger1 = Logger.GetInstance();
+        var logger2 = Logger.GetInstance();
+
+        logger1.Log("Starting application", LogLevel.INFO);
+        logger2.Log("Warning message", LogLevel.WARNING);
+
+        Console.WriteLine($"Same instance: {object.ReferenceEquals(logger1, logger2)}\n");
+
+        // -------- Builder --------
+        Console.WriteLine("=== Builder Report ===");
+        ReportDirector director = new ReportDirector();
+        IReportBuilder builder = new SimpleReportBuilder();
+        director.ConstructReport(builder);
+        builder.GetReport().Export();
+
+        // -------- Prototype --------
+        Console.WriteLine("\n=== Prototype Character ===");
+        Character hero = new Character
+        {
+            Health = 100,
+            Weapon = new Weapon { Name = "Sword", Damage = 10 }
+        };
+        hero.Skills.Add("Fireball");
+
+        Character clone = (Character)hero.Clone();
+        clone.Weapon.Name = "Axe";
+        clone.Skills.Add("Ice Blast");
+
+        Console.WriteLine($"Hero Weapon: {hero.Weapon.Name}, Skills: {string.Join(",", hero.Skills)}");
+        Console.WriteLine($"Clone Weapon: {clone.Weapon.Name}, Skills: {string.Join(",", clone.Skills)}");
     }
 }

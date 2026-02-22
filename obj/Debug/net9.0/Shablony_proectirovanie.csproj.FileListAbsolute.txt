@@ -1,0 +1,15 @@
+C:\Users\Asus\Desktop\Shablony_proectirovanie\obj\Debug\net9.0\Shablony_proectirovanie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\Shablony_proectirovanie\obj\Debug\net9.0\Shablony_proectirovanie.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Shablony_proectirovanie\obj\Debug\net9.0\Shablony_proectirovanie.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Shablony_proectirovanie\obj\Debug\net9.0\Shablony_proectirovanie.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Shablony_proectirovanie\obj\Debug\net9.0\Shablony_proectirovanie.sourcelink.json
+C:\Users\Asus\Desktop\Shablony_proectirovanie\bin\Debug\net9.0\Shablony_proectirovanie.exe
+C:\Users\Asus\Desktop\Shablony_proectirovanie\bin\Debug\net9.0\Shablony_proectirovanie.deps.json
+C:\Users\Asus\Desktop\Shablony_proectirovanie\bin\Debug\net9.0\Shablony_proectirovanie.runtimeconfig.json
+C:\Users\Asus\Desktop\Shablony_proectirovanie\bin\Debug\net9.0\Shablony_proectirovanie.dll
+C:\Users\Asus\Desktop\Shablony_proectirovanie\bin\Debug\net9.0\Shablony_proectirovanie.pdb
+C:\Users\Asus\Desktop\Shablony_proectirovanie\obj\Debug\net9.0\Shablony_proectirovanie.dll
+C:\Users\Asus\Desktop\Shablony_proectirovanie\obj\Debug\net9.0\refint\Shablony_proectirovanie.dll
+C:\Users\Asus\Desktop\Shablony_proectirovanie\obj\Debug\net9.0\Shablony_proectirovanie.pdb
+C:\Users\Asus\Desktop\Shablony_proectirovanie\obj\Debug\net9.0\Shablony_proectirovanie.genruntimeconfig.cache
+C:\Users\Asus\Desktop\Shablony_proectirovanie\obj\Debug\net9.0\ref\Shablony_proectirovanie.dll
