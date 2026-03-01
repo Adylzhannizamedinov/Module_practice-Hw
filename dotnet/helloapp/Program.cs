@@ -289,3 +289,88 @@
 
 // byte a = 6;
 // int b = a+88;
+// Условные выражения
+// int a = 10;
+// int b = 4;
+
+// bool c = a == b;
+// bool d = a != 10;
+
+// Console.WriteLine(c);
+// Console.WriteLine(d);
+
+// int a = 10;
+// int b= 5;
+// bool c= a!=b;
+// bool d =b!=10;
+// Console.WriteLine(c);
+// Console.WriteLine(d);
+
+// int a = 10;
+// int b = 2;
+// bool c = a<b;
+// Console.WriteLine(c);
+
+// int a = 10;
+// int b = 4;
+// bool c = a>b;
+// bool d = a >25;
+// Console.WriteLine(c);
+// Console.WriteLine(d);
+
+// <=
+
+// int a = 10;
+// int b = 4;
+// bool  c = a >= b;
+// bool  d = a >= 25;
+// Console.WriteLine(c);
+// Console.WriteLine(d);
+
+// >=
+
+// int a = 10;;
+// int b = b= 4;
+// bool c = a>= b; 
+// bool d = a>= 25;
+// Console.WriteLine(c);
+// Console.WriteLine(d);
+
+// | logical operation
+
+// bool x1 = (5>6)  | (4<6);
+// bool x2 = (5>6)  | (4>6);
+ 
+// bool x3 = (5>6) & (4<6);
+// bool  x4 =  (5<6) & (4<6);
+
+// bool x5 = (5>6) || (4<6);
+// bool x6 =  (5<6) || (4>6);
+
+// bool x7 = (5>6)  && (4<6);
+// bool x8  = (5<6) && (4<6);
+
+// bool a = true;
+// bool b = !a;
+
+// bool x9 = (5>6) ^(4<6);
+// bool x10 = (50>6)^ (4/2<3);
+// Console.WriteLine(x1);
+// Console.WriteLine(x2);
+// Console.WriteLine(x3);
+// Console.WriteLine(x4);
+// Console.WriteLine(x5);
+// Console.WriteLine(x6);
+// Console.WriteLine(x7);
+// Console.WriteLine(x8);
+// Console.WriteLine(x9);
+// Console.WriteLine(x10);
+
+//  if else 
+
+// int a =8;
+// int b = 4;
+// if (a>b)
+// {
+//     Console.WriteLine($"Integer {a} bigger than {b}");
+// }
