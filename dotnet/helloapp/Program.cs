@@ -374,3 +374,13 @@
 // {
 //     Console.WriteLine($"Integer {a} bigger than {b}");
 // }
+
+// int num1 = 8; 
+// int num2 = 6;
+// if (num1<num2)
+// {
+//     Console.WriteLine($"1 больше2");
+// }
+// else {
+//     Console.WriteLine($"1 меньше или равно");
+// }
