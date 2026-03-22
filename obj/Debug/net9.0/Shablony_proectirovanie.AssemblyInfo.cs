@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shablony_proectirovanie")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8f34133e0acac9799064b0e58de3aa0db7fc1c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba40c33a5e6fa77936590923054743e649794101")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shablony_proectirovanie")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shablony_proectirovanie")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
