@@ -429,7 +429,7 @@
 //     i--;
 // }
 
-foreach(char c in "Tom")
-{
-    Console.WriteLine(c);
-}
+// foreach(char c in "Tom")
+// {
+//     Console.WriteLine(c);
+// }
