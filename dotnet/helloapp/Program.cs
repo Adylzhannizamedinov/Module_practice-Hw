@@ -384,3 +384,52 @@
 // else {
 //     Console.WriteLine($"1 меньше или равно");
 // }
+
+// string name = "Alex";
+ 
+// if (name == "Tom")
+//     Console.WriteLine("Вас зовут Tomas");
+// else if (name == "Bob")
+//     Console.WriteLine("Вас зовут Robert");
+// else if (name == "Mike")
+//     Console.WriteLine("Вас зовут Michael");
+// else
+//     Console.WriteLine("Неизвестное имя");
+
+// циклы
+// for (int i = 1; i <4; i++)
+// {
+//     Console.WriteLine(i);
+//     }
+
+// for (int i = 1; i<4; i++) Console.WriteLine(i);
+// for (int i=1; i<4;i++)
+// Console.WriteLine(i);
+
+// for (int i = 1; i < 4;i++)Console.WriteLine(i);
+// int i =6;
+// do 
+// {
+//   Console.WriteLine(i);
+//   i--;
+// }
+// while (i>0);
+// int i = -1;
+// do
+// {
+//    Console.WriteLine(i);
+//    i--;
+// }
+// while (i>0);
+
+// int i = 6;
+// while ( i>0)
+// {
+//     Console.WriteLine(i);
+//     i--;
+// }
+
+foreach(char c in "Tom")
+{
+    Console.WriteLine(c);
+}
