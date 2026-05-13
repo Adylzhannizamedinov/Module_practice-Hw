@@ -433,3 +433,157 @@
 // {
 //     Console.WriteLine(c);
 // }
+//  int n= 7;
+// if (n% 2 ==0)
+// {
+//     Console.WriteLine("Even");
+// }
+// else{
+//     Console.WriteLine("Ood");
+// }
+
+// int n = 3;
+// if (n > 0)
+// {
+//     Console.WriteLine("Possitive");
+// }
+// else if (n < 0)
+// {
+//     Console.WriteLine("negative");
+// }
+// else
+// {
+//     Console.WriteLine("Zero");
+// }
+
+// int a = 2;
+// int b = 4;
+// if (a > b)
+// {
+//     Console.WriteLine("Smaller");
+// }
+// else if (b > a)
+// {
+//     Console.WriteLine("Bigger");
+// }
+// else 
+// {
+//     Console.WriteLine("Equal");
+// }
+
+// int  score = 85;
+// if (score >= 90)
+// {
+//     Console.WriteLine("A");
+// }
+
+// else if (score >= 70)
+// {
+//     Console.WriteLine("B");
+// }
+// else if (score >= 50)
+// {
+//     Console.WriteLine("C");
+// }
+
+// else 
+// {
+//     Console.WriteLine("D");
+// }
+
+// for (int i = 1; i < 4; i++)
+// {
+//     Console.WriteLine(i);
+// }
+// for (int i = 1; i < 4; i++)
+// Console.WriteLine(i);
+
+// for (int i = 1; i < 4; i++) Console.WriteLine(i);
+
+// var i = 1;
+// for (Console.WriteLine("Начала выполнение циклв"); i < 4; Console.WriteLine($"i = {i}"))
+// {
+//     i++;
+// }
+
+// foreach(char c in "Tom")
+// {
+//     Console.WriteLine(c);
+// }
+// for (int i = 0; i < 9; i++)
+// {
+//     if (i == 5)
+//     break;
+//     Console.WriteLine(i);
+// }
+// for (int i = 0; i < 9; i++)
+// {
+//     if (i == 5)
+//     continue;
+//     Console.WriteLine(i);
+// }
+// for (int i = 1; i < 10; i++)
+// {
+//     for (int j = 1; j < 10;  j++)
+//     {
+//         Console.Write($"{i * j} \t");
+//     }
+//     Console.WriteLine();
+// }
+
+
+// for (int i = 0; i < 10;  i++)
+// {
+//     Console.WriteLine(i);
+// }
+
+// int i = 0;
+// while (i < 20)
+// {
+//     Console.WriteLine(i);
+//     i++;
+// }
+
+// int i = 0;
+// while ( i <= 20)
+// {
+//     Console.WriteLine(i+"");
+//     i+=2;
+// }
+
+// Console.Write("Write sum:");
+// int n = int.Parse(Console.ReadLine());
+// int sum = 0;
+// for (int i = 1; i <=15; i++)
+// {
+//     sum +=i;
+// }
+// Conole.WriteLine("Sum = "+ sum);
+// Console.Write("Введите число: ");
+// int n = int.Parse(Console.ReadLine());
+
+// int sum = 0;
+
+// for (int i = 1; i <= n; i++)
+// {
+//     sum += i;
+// }
+
+// Console.WriteLine("Сумма = " + sum);
+
+// Console.Write("write:");
+// int n = int.Parse(Console.ReadLine());
+// for (int i = 1; i<=10;i++)
+// {
+//     Console.WriteLine($"{n} x {i} = {n*i}");
+// }
+
+// int n = int.Parse(Console.ReadLine());
+// int fact = 1;
+
+// for (int i = 1; i <= n; i++) 
+// {
+//     fact *= i;
+// }
+
+// Console.WriteLine(fact);

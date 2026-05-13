@@ -195,3 +195,34 @@
 //         Console.WriteLine($"\nОбщий размер: {root.GetSize()} KB");
 //     }
 // }
+
+
+// // interface ICommand
+// {
+//     void Execute();
+//     void Undo();
+// }
+
+// class AssignUserCommand : ICommand
+// {
+//     private Task task;
+//     private User newUser;
+//     private User oldUser;
+
+//     public AssignUserCommand(Task task, User user)
+//     {
+//         this.task = task;
+//         this.newUser = user;
+//     }
+
+//     public void Execute()
+//     {
+//         oldUser = task.AssignedUser;
+//         task.AssignedUser = newUser;
+//     }
+
+//     public void Undo()
+//     {
+//         task.AssignedUser = oldUser;
+//     }
+// // }
